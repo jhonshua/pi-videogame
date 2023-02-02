@@ -6,7 +6,7 @@ const router = Router();
 
 
 
-//GET /videogames   donde traigo todo los juegos -----------------------------------------------------------------------------------------------------------
+//GET /videogames   donde traigo todo los juegos prueba realizada en postman http://localhost:3001/videogames   -----------------------------------------------------------------------------------------------------------
 
 
 router.get("/", async (req, res, next) => {
@@ -34,7 +34,7 @@ router.get("/", async (req, res, next) => {
 });
 
 
-//GET / videogames/platforms traer todas las plataformas de juegos-------------------------------------------------------------------------------------------
+//GET / videogames/platforms traer todas las plataformas de juegos pruebas realizadas en postman http://localhost:3001/videogames/platforms-------------------------------------------------------------------------------------------
 
 router.get("/platforms", async (req, res, next) => {
   try {
@@ -57,7 +57,7 @@ router.get("/platforms", async (req, res, next) => {
 });
 
 
-//GET ------filtar todos los juegos por plataformas http://localhost:3001/videogames?platforms="PlayStation 3"
+//GET ------filtar todos los juegos por plataformas pruebas realizadas en postman http://localhost:3001/videogames?platforms="PlayStation 3"
 
 
 router.get("/:platforms", async (req, res, next) => {

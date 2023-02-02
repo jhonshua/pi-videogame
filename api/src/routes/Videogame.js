@@ -5,6 +5,12 @@ const { Videogame, Genres } = require("../db.js");
 
 const router = Router();
 
+
+
+
+//GET /{idVideogame}  prueba realizada en postman http://localhost:3001/videogame/34988 --------------------------------------------------------------------------------------------------------
+
+
 router.get("/:idVideogame", async (req, res, next) => {
   const { idVideogame } = req.params; //* El id me llega por params
   let data = await videogame(idVideogame);
@@ -19,6 +25,15 @@ router.get("/:idVideogame", async (req, res, next) => {
     next(e);
   }
 });
+
+
+
+
+
+// POST /videogame  donde mado a escribir a mi base datos  ---------------------------------------------------------------------------------------
+
+
+
 
 router.post("/", async (req, res, next) => {
   const { name, image, genres, released, rating, platforms, description } =

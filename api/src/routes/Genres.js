@@ -9,7 +9,7 @@ const router = Router();
 
 const {API_KEY} = process.env;
 
-// // RUTA GET -> /genres --------------------------------------------------------------------------------------------------------------
+// // RUTA GET -> /genres   prueba realizada en postman http://localhost:3001/genres --------------------------------------------------------------------------------------------------------------
 
 router.get("/", async (req, res, next) => {
   try {
