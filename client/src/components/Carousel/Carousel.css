@@ -1,0 +1,118 @@
+
+
+
+.ef-carousel {
+  text-align: center;
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.ef-carousel__state {
+  display: none;
+}
+.ef-carousel__next, .ef-carousel__prev {
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  position: absolute;
+  right: 10px;
+  color: #000;
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -20px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+  transition: opacity 100ms linear;
+}
+.ef-carousel__next:before, .ef-carousel__prev:before {
+  content: '>';
+}
+.ef-carousel__next:hover, .ef-carousel__prev:hover {
+  opacity: 0.8;
+}
+.ef-carousel__prev {
+  right: auto;
+  left: 10px;
+}
+.ef-carousel__prev:before {
+  content: '<';
+}
+.ef-carousel__dot {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.ef-carousel__items {
+  white-space: nowrap;
+  font-size: 0;
+  margin: 0 0 5px;
+}
+.ef-carousel__item {
+  margin-top: 10rem;
+  max-width: 100%;
+  vertical-align: top;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 600ms linear;
+}
+.ef-carousel__item:first-child {
+  position: relative;
+}
+.ef-carousel__state:checked:nth-child(1) ~ .ef-carousel__dots .ef-carousel__dot:nth-child(1) {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.ef-carousel__state:checked:nth-child(1) ~ .ef-carousel__items .ef-carousel__item:nth-child(1) {
+  opacity: 1;
+}
+.ef-carousel__state:checked:nth-child(1) ~ .ef-carousel__prev-group .ef-carousel__prev:nth-child(1), .ef-carousel__state:checked:nth-child(1) ~ .ef-carousel__next-group .ef-carousel__next:nth-child(1) {
+  display: block;
+
+
+
+}
+.ef-carousel__state:checked:nth-child(2) ~ .ef-carousel__dots .ef-carousel__dot:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.ef-carousel__state:checked:nth-child(2) ~ .ef-carousel__items .ef-carousel__item:nth-child(2) {
+  opacity: 1;
+}
+.ef-carousel__state:checked:nth-child(2) ~ .ef-carousel__prev-group .ef-carousel__prev:nth-child(2), .ef-carousel__state:checked:nth-child(2) ~ .ef-carousel__next-group .ef-carousel__next:nth-child(2) {
+  display: block;
+}
+
+
+
+.ef-carousel__state:checked:nth-child(3) ~ .ef-carousel__dots .ef-carousel__dot:nth-child(3) {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.ef-carousel__state:checked:nth-child(3) ~ .ef-carousel__items .ef-carousel__item:nth-child(3) {
+  opacity: 1;
+}
+.ef-carousel__state:checked:nth-child(3) ~ .ef-carousel__prev-group .ef-carousel__prev:nth-child(3), .ef-carousel__state:checked:nth-child(3) ~ .ef-carousel__next-group .ef-carousel__next:nth-child(3) {
+  display: block;
+}
+
+
+
+
+.ef-carousel__state:checked:nth-child(4) ~ .ef-carousel__dots .ef-carousel__dot:nth-child(4) {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.ef-carousel__state:checked:nth-child(4) ~ .ef-carousel__items .ef-carousel__item:nth-child(4) {
+  opacity: 1;
+}
+.ef-carousel__state:checked:nth-child(4) ~ .ef-carousel__prev-group .ef-carousel__prev:nth-child(4), .ef-carousel__state:checked:nth-child(3) ~ .ef-carousel__next-group .ef-carousel__next:nth-child(3) {
+  display: block;
+}
