@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap"); /*fuentes de letras google*/
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Bungee+Shade&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.card {
+  min-height: 200px;
+  width: 360px;
+  margin: 40px 10px;
+  padding: 0.8rem;
+  cursor: pointer;
+  background-image: url("./fondoCard.jpg");
+  background-size: cover;
+  border: 1px solid rgba(34, 196, 34, 0.842);
+  border-radius: 10px;
+  box-shadow: 0 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+.card__content {
+  margin: 0.8rem 0;
+  color: #222;
+  overflow: hidden;
+  margin-top: -200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.nombre {
+  margin: 1rem;
+  text-align: center;
+  color:white;
+  text-shadow: #000;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 25px;
+
+}
+
+.genres {
+  font-size: 30px;
+  text-shadow: #000;
+  line-height: 1.8rem;
+  text-align: center;
+  color: antiquewhite;
+  font-family: "Alumni Sans Inline One", cursive;
+}
+
+.rating {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-align: center;
+  color: antiquewhite;
+  font-family: "Nunito", sans-serif;
+}
+
+.navLink {
+  width: 200px;
+  padding: 10px 15px;
+  display: block;
+  text-align: center;
+  margin: 0.6rem auto;
+  font-size: 1.1rem;
+  color: #ffcdb2;
+  text-decoration: none;
+  background-color: #2b2d42;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-family: "Nunito", sans-serif;
+} 
+
+.navLink:hover {
+  color: #fff;
+  background-color: #000;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+.card:hover img {
+  margin-top: -60px;
+  box-shadow: 0 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.card:hover > .card__content {
+  margin-top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+

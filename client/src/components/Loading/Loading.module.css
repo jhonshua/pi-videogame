@@ -1,0 +1,16 @@
+.box_loading {
+  justify-content: center;
+    background-size: contain;
+   
+    height: 20%;
+    width: 100%;
+  }
+  
+  .box_loading img {
+    height: 55%;
+    width: 35%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+
+  }
+  

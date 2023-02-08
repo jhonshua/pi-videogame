@@ -9,11 +9,10 @@ const LandingPage = () => {
   return (
     <div className={styles.main}>
 
-    <video   />
+    
 
   <div className={styles.content}>
 
-   <h1 className={styles.h1}>¡ Welcome !</h1><br/>
    
   <Link to="/home">
   <button className={styles.button}>Go Home</button>
